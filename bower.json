@@ -1,17 +1,22 @@
 {
-  "name": "Mardown live",
+  "name": "jquery-markdown-live",
   "version": "0.1.0",
-  "homepage": "git@github.com:spotlab/Markdown-live.git",
+  "homepage": "http://www.spotlab.net.com/jquery-markdown-live",
   "description": "Minimalist but customizable jQuery markdown editor with live preview",
-  "main": "js/jquery.markdownlive.js",
+  "main": "js/jquery.markdown-live.js",
   "dependencies": {
       "jquery": ">=1.8.3",
       "js-markdown-extra": ">=1.2.4"
   }
+  "authors": [
+    "Spotlab <contact@spotlab.net>",
+    "Pascal Beynel <pascal.beynel@gmail.com>",
+  ],
   "keywords": [
     "markdown",
     "editor",
-    "jquery"
+    "jquery",
+    "preview"
   ],
   "license": "GPLv3"
 }
