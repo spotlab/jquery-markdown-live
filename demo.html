@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Markdown live demo</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/markdown-live.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="bar">
+					<ul class="markdownlive-bar">
+						<li alt="Bold" data-before="**" data-after="**" data-placeholder="some text in bold">
+							<i class="fa fa-bold"></i>
+						</li>
+						<li alt="Italics" data-before="*" data-after="*" data-placeholder="some text in italic">
+							<i class="fa fa-italic"></i>
+						</li>
+						<li alt="Link" data-before="[ " data-after="](http:// &quot;Link title&quot;)" data-placeholder="link">
+							<i class="fa fa-link"></i>
+						</li>
+						<li alt="Image" data-before="![Alt text](" data-after=")" data-placeholder="http://">
+							<i class="fa fa-picture-o"></i>
+						</li>
+						<li alt="Unordered list" data-before="* " data-after="" data-extendselect="1">
+							<i class="fa fa-list-ul"></i>
+						</li>
+						<li alt="Ordered list" data-before="1. " data-after="" data-placeholder="Item 1&#13;2. Item 2&#13;3. Item 3&#13;" data-extendselect="1">
+							<i class="fa fa-list-ol"></i>
+						</li>
+						<li alt="Blocks" data-before="    " data-after="" data-placeholder="A block content" data-block="1" data-extendselect="1">
+							<i class="fa fa-indent"></i>
+						</li>
+						<li alt="Table" data-before="" data-placeholder="First Header  &#124;Second Header &#13;------------- &#124;------------- &#13;Content cell 1 &#124;Content cell 2 &#13;Content cell 3  &#124;Content cell 4 &#13;" data-after="" data-block="1">
+							<i class="fa fa-table"></i>
+						</li>
+						<li alt="" data-before="> " data-after="" data-extendselect="1" data-block="1" data-placeholder="Quoted text">
+							<i class="fa fa-quote-right"></i>
+						</li>
+						<li alt="" data-before="***" data-after="" data-extendselect="1" data-block="1">
+							<i class="fa fa-ellipsis-h"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+<textarea class="markdownlive" data-bar=".markdownlive-bar" data-preview=".markdownlive-preview">
+# Markdown live : a minimalist but customizable jquery markdown plugin editor with live preview
+
+***
+
+**Bold** *Italic* [Our website](http://www.spotlab.net "Spotlab")
+
+***
+Image  
+![Our logo](http://www.spotlab.net/assets/img/logo/spotlab@2x.png)
+
+***
+First Header  |Second Header 
+------------- |------------- 
+Content cell 1 |Content cell 2 
+Content cell 3  |Content cell 4 
+
+***
+
+    This is a block content
+
+***
+
+Sorted list
+1. List 1.1
+2. List 1.2
+3. List 1.3
+
+Unsorted list
+* List 2.1
+* List 2.2
+* List 2.3
+</textarea>
+			</div>
+			<div class="col-md-6">
+				<div class="markdownlive-preview"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/lib/js-markdown-extra.js"></script>
+	<script src="js/jquery.markdownlive.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('textarea').markdownlive();
+	});
+	</script>
+</body>
+</html>
