@@ -1,6 +1,6 @@
 {
   "name": "jquery-markdown-live",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "http://www.spotlab.net.com/jquery-markdown-live",
   "description": "Minimalist but customizable jQuery markdown editor with live preview",
   "main": "js/jquery.markdown-live.js",
