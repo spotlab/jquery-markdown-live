@@ -8,7 +8,7 @@
  
     'use strict';
 
-    var ver = '0.1',
+    var ver = '0.1.0',
         pluginName = 'markdownlive';
 
     $.fn.markdownlive = function(options) {
