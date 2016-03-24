@@ -5,14 +5,18 @@
 	<title>Markdown live demo</title>
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/markdown-live.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-markdown-live.css">
 </head>
 <body>
 	<div class="container">
+		<h1>jQuery Markdown live demo</h1>
+		<hr />
+
+		<h2>Instance 1</h2>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="bar">
-					<ul class="markdownlive-bar">
+					<ul class="markdownlive-bar bar1">
 						<li title="Bold" data-before="**" data-after="**" data-placeholder="some text in bold">
 							<i class="fa fa-bold"></i>
 						</li>
@@ -47,8 +51,8 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-<textarea class="markdownlive" data-bar=".markdownlive-bar" data-preview=".markdownlive-preview">
-# Markdown live : a minimalist but customizable jquery markdown plugin editor with live preview
+<textarea data-bar=".bar1" data-preview=".preview1">
+# jQuery Markdown live : a minimalist but customizable jquery markdown plugin editor with live preview
 
 ***
 
@@ -77,19 +81,57 @@ Sorted list
 
 Unsorted list
 * List 2.1
+    * List 2.1.1
+    * List 2.1.2
 * List 2.2
 * List 2.3
+
 </textarea>
 			</div>
 			<div class="col-md-6">
-				<div class="markdownlive-preview"></div>
+				<div class="markdownlive-preview preview1"></div>
+			</div>
+		</div>
+
+		<h2>Instance 2</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="bar">
+					<ul class="markdownlive-bar bar2">
+						<li title="Bold" data-before="**" data-after="**" data-placeholder="some text in bold">
+							<i class="fa fa-bold"></i>
+						</li>
+						<li title="Italics" data-before="*" data-after="*" data-placeholder="some text in italic">
+							<i class="fa fa-italic"></i>
+						</li>
+						<li title="Link" data-before="[ " data-after="](http:// &quot;Link title&quot;)" data-placeholder="link">
+							<i class="fa fa-link"></i>
+						</li>
+						<li title="Image" data-before="![Alt text](" data-after=")" data-placeholder="http://">
+							<i class="fa fa-picture-o"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+<textarea data-bar=".bar2" data-preview=".preview2">
+# jQuery Markdown live : a minimalist but customizable jquery markdown plugin editor with live preview
+
+***
+
+**Bold** *Italic* [Our website](http://www.spotlab.net "Spotlab")
+
+</textarea>
+			</div>
+			<div class="col-md-6">
+				<div class="markdownlive-preview preview2"></div>
 			</div>
 		</div>
 	</div>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script src="//cdn.jsdelivr.net/js-markdown-extra/1.2.4/js-markdown-extra.min.js"></script>
-	<script src="js/jquery.markdownlive.js"></script>
+	<script src="js/jquery.markdown-live.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$('textarea').markdownlive();
