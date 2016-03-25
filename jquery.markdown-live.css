@@ -16,6 +16,7 @@
 .markdownlive-bar li:hover {
 	color: #fff;
 	background-color: #313131;
+	cursor:pointer;
 }
 
 /* Markdownlive Editor

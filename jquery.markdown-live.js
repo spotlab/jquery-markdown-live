@@ -15,7 +15,6 @@
 
         // Settings
         var settings = $.extend({
-            bar: ""
         }, options );
 
         // Functions
@@ -82,15 +81,15 @@
             },
 
             setFocus = function ($object, start, end) {
-                
-                $object.focus();
-
+            
                 if (end === undefined){
                     end = start;
                 }
 
                 $object[0].selectionStart = start;
                 $object[0].selectionEnd = end;
+                
+                $object.focus();
             };
 
         // Parsing dom
@@ -109,9 +108,9 @@
 
             // Bar buttons
             if ($bar.length > 0) {
-                $bar.children('li').click(function(){
-                    var $action = $(this);
-                    wrapSelection($this, $action);
+                $bar.children('li').click(function(e){
+                    e.preventDefault();
+                    wrapSelection($this, $(this));
                 });
             }
         });
