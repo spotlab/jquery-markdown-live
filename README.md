@@ -1,7 +1,7 @@
 # jQuery Markdown live
 Minimalist but customizable jQuery markdown editor with live preview
 
-[Demo](http://www.spotlab.net/demo/jquery-markdown-live/demo.html "Demo jQuery Markdown live")
+[Demo](http://www.spotlab.net/jquery-markdown-live/demo.html "Demo jQuery Markdown live")
 
 ![Sreenshot](http://www.spotlab.net/jquery-markdown-live/screenshot.png)
 
