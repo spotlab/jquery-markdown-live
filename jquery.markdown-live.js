@@ -74,7 +74,7 @@
                 $this.val(text.substring(0, start) + replacement + text.substring(end, length));
 
                 // Reset selection
-                setFocus($this, start + before.length, end + after.length);
+                setFocus($this, start, end + after.length + before.length);
                 
                 // Update preview
                 updatePreview($this);
